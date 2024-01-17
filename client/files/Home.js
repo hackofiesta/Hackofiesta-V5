@@ -36,7 +36,6 @@ const Home = () => {
       {!val && <WebsiteLoadUp />}
       {val && (
         <>
-          {/* <ThemeProvider themeMode="dark"> */}
           <Navbar />
           <HeroSection/>
           <TextSplitEffect/>
@@ -46,7 +45,6 @@ const Home = () => {
           <Team/>
           <Accordian/>
           <Footerr />
-        {/* </ThemeProvider> */}
         </>
       )}  
     </div>
