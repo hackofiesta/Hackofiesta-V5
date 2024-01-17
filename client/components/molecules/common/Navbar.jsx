@@ -64,7 +64,7 @@ const Navbar = () => {
       ref={refNav}
       className="flex sticky min-h-24 bg-black sm:justify-normal justify-between top-0 backdrop-blur-md z-10"
     >
-      <div className="opacity-70">
+      <div className="opacity-50">
         <p className="grayscale text-[#122f4c] absolute ml-[36px] md:ml-[38px] text-black font-extrabold text-[8px] md:text-xs z-10">
           AWAITING
         </p>
