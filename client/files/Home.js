@@ -10,6 +10,7 @@ import Footerr from "@/components/molecules/common/Footer";
 import Sponsors from "@/components/molecules/sponsors/Sponsors";
 import RequestToJoin from "@/components/molecules/home/RequestToJoin";
 import Team from "@/components/molecules/home/Team";
+import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -31,25 +32,24 @@ const Home = () => {
     }
   }, []);
   return (
-    <>
+    <div >
       {!val && <WebsiteLoadUp />}
       {val && (
         <>
-        
+          {/* <ThemeProvider themeMode="dark"> */}
           <Navbar />
-          <HeroSection />
-
-          {/* <CustomScrollbar /> */}
-          <TextSplitEffect />
+          <HeroSection/>
+          <TextSplitEffect/>
           <RequestToJoin/>
-          <Stats />
-          <Sponsors />
-          <Team />
-          <Accordian />
+          <Stats/>
+          <Sponsors/>
+          <Team/>
+          <Accordian/>
           <Footerr />
+        {/* </ThemeProvider> */}
         </>
-      )}
-    </>
+      )}  
+    </div>
   );
 };
 

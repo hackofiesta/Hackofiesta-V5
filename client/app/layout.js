@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import MouseTrail from "@/components/molecules/common/MouseTrail";
 import Script from "next/script";
-
+import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,6 +21,9 @@ export const metadata = {
     "hackathon in up",
     "hackathon in iiit lucknow",
     "hackathon in iiitl",
+    "biggest hackathon in lucknow",
+    "hof",
+    "hof 5",
   ],
   canonical: "https://www.hackofiesta.com/",
   metadataBase: new URL("https://www.hackofiesta.com"),
@@ -60,6 +63,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <ThemeProvider themeMode="dark"></ThemeProvider> */}
       <body className={inter.className}>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-KCPPJMEM4B" />
         <Script id="google-analytics">

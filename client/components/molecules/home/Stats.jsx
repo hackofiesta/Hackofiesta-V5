@@ -8,7 +8,8 @@ import BgGradient from "@/components/atoms/gradientBackground";
 const Stats = () => {
   console.log(Features);
   return (
-    <ThemeProvider themeMode="dark">
+    // <ThemeProvider themeMode="dark">
+      <div>
       <div
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center md:pt-32`}
       >
@@ -19,27 +20,28 @@ const Stats = () => {
           items={[
             {
               description:
-                "Develop innovative solutions that address environmental challenges and promote sustainable practices for a greener future.",
+                "Develop innovative solutions that address environmental challenges and promote a greener future.",
               icon: Zap,
               title: "SUSTAINABILITY",
+
             },
             {
               description:
-                "Harness technology to create impactful and scalable solutions that address social issues, fostering positive change and community well-being.",
+                "Create impactful and scalable solutions that address social issues, fostering positive change and community well-being.",
               icon: Zap,
               title: "SOCIAL GOOD",
             },
             {
               description:
-                "Leverage Generative Artificial Intelligence and Machine Learning to develop applications that enhance automation, analysis, and decision-making.",
+                "Leverage Generative AI and Machine Learning to develop apps that enhance automation, analysis, and decision-making.",
               icon: MoonStar,
               title: "AI/ML",
             },
             {
               description:
-                " Dive into the world of smart contracts, DeFi protocols and the decentralized web. Unchain your imagination and build the next frontier of the internet",
+                " Dive into the world of smart contracts, DeFi protocols and the decentralized web. Build the next frontier of the internet.",
               icon: Palette,
-              title: "BLOCKCHAIN & wEB3",
+              title: "BLOCKCHAIN & WEB3",
             },
             {
               description:
@@ -49,7 +51,7 @@ const Stats = () => {
             },
             {
               description:
-                "Whether your project spans emerging technologies (e.g AR/VR) , unique problem-solving, or uncharted territories, this track welcomes diverse and boundary-pushing ideas. ",
+                "This track welcomes diverse and boundary-pushing ideas, using emerging technologies ",
               icon: MoonStar,
               title: "OPEN",
             },
@@ -57,7 +59,8 @@ const Stats = () => {
           // itemStyle={{ width:"500px",height:"500px" }}
         />
       </div>
-    </ThemeProvider>
+      </div>
+    // </ThemeProvider>
   );
 };
 
