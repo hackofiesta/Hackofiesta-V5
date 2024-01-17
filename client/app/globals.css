@@ -7,6 +7,9 @@
   padding: 0;
 }
 
+html {
+  cursor: none;
+}
 .word-spacing {
   word-spacing: 2px;
 }
@@ -46,7 +49,7 @@ body {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: radial-gradient(white,black);
+  background-image: radial-gradient(white, black);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -244,14 +247,13 @@ body {
   background-repeat: no-repeat;
 
   animation: bg-spin 3s linear infinite;
-
 }
 
 @keyframes bg-spin {
-    to {
-      --border-angle: 1turn;
-    }
+  to {
+    --border-angle: 1turn;
   }
+}
 
 @property --border-angle {
   syntax: "<angle>";
@@ -435,19 +437,17 @@ body {
   display: inline-block;
   position: relative;
   border-radius: 100%;
-  
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: 
-  #FF00FF;
+  background-color: #ff00ff;
   border-radius: 100%;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
@@ -459,8 +459,8 @@ body {
   transform-origin: bottom left;
 }
 
-
-#accordcomp, .new_accordcomp {
+#accordcomp,
+.new_accordcomp {
   --border-size: 1px;
   --border-angle: 0turn;
   background-image: conic-gradient(
@@ -469,7 +469,7 @@ body {
       #112 50%,
       #213
     ),
-    conic-gradient(from var(--border-angle), transparent 20%, #03D0FF, #FF00FF);
+    conic-gradient(from var(--border-angle), transparent 20%, #03d0ff, #ff00ff);
   background-size: calc(100% - (var(--border-size) * 2))
       calc(100% - (var(--border-size) * 2)),
     cover;
@@ -477,14 +477,13 @@ body {
   background-repeat: no-repeat;
 
   animation: bg-spin 3s linear infinite;
-
 }
 
 @keyframes bg-spin {
-    to {
-      --border-angle: 1turn;
-    }
+  to {
+    --border-angle: 1turn;
   }
+}
 
 @property --border-angle {
   syntax: "<angle>";
@@ -492,45 +491,41 @@ body {
   initial-value: 0turn;
 }
 
-
 .nav-shadow {
-  box-shadow: 0 0 10px -4px ;
+  box-shadow: 0 0 10px -4px;
 }
-body{
+body {
   background: black;
 }
 
-.card_inside_shadow{
-  box-shadow: -15px 0 30px rgba(246, 247, 247, 0.8); 
+.card_inside_shadow {
+  box-shadow: -15px 0 30px rgba(246, 247, 247, 0.8);
 }
 
 .ant-drawer {
   margin-top: 20px;
 }
 
-.ant-drawer-mask{
+.ant-drawer-mask {
   background-color: transparent !important;
   backdrop-filter: blur(10px) !important;
 }
 
-.ant-menu-title-content{
+.ant-menu-title-content {
   color: white !important;
   font-size: 20px;
   padding: 0 20px;
   border-radius: 10px;
-  
 }
-.ant-menu-title-content:hover{
+.ant-menu-title-content:hover {
   background-color: rgba(0, 0, 0, 0.362);
-
 }
 
-.ant-menu-inline{
+.ant-menu-inline {
   padding-top: 20px;
-  
 }
 
-.ant-btn::after{
+.ant-btn::after {
   content: "Coming Soon";
   height: 3rem;
   display: flex;
@@ -542,16 +537,14 @@ body{
   background-color: black;
   opacity: 0;
   position: absolute;
-  
- transition: all 0.6s;
-  left:0.7rem;
+
+  transition: all 0.6s;
+  left: 0.7rem;
 }
-.ant-btn:hover:after{
+.ant-btn:hover:after {
   opacity: 0.9;
   transform: translateY(1rem);
 }
-
-
 
 /* background */
 /* @keyframes rotate {
@@ -608,24 +601,23 @@ body{
   transition: all 0.25s ease-out;
 }
 
-
-.btnDiv .acss-1f6t0zm{
+.btnDiv .acss-1f6t0zm {
   display: none;
 }
 
-.outer_div_gradient{
+.outer_div_gradient {
   z-index: -500;
 }
-.outer_div_z{
+.outer_div_z {
   z-index: 500;
 }
 .css-jpln7h-MuiTabs-scroller {
   position: static !important; /* or any other value you want */
 }
 
-.css-heg063-MuiTabs-flexContainer{
-display: flex !important;
-flex-wrap: wrap !important;
+.css-heg063-MuiTabs-flexContainer {
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
 
 @media (max-width: 700px) {
@@ -634,21 +626,20 @@ flex-wrap: wrap !important;
   }
 }
 
-.MuiBox-root{
+.MuiBox-root {
   padding: 0 !important;
 }
 
-.Mui-selected{
+.Mui-selected {
   border-radius: 10px !important;
 }
 
-.verticalTabs .MuiBox-root{
+.verticalTabs .MuiBox-root {
   background: transparent !important;
 }
 
-.MuiTabs-vertical{
-  @apply ms-10 me-[10vw] xl:ms-24 
-
+.MuiTabs-vertical {
+  @apply ms-10 me-[10vw] xl:ms-24;
 }
 
 .pinkshadow:hover {

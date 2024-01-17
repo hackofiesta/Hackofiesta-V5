@@ -1,10 +1,10 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import * as React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -35,13 +35,13 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
-    'aria-controls': `vertical-tabpanel-${index}`,
+    "aria-controls": `vertical-tabpanel-${index}`,
   };
 }
 
 const darkTheme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
   },
 });
 
@@ -52,22 +52,88 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
-  const Item = ({image, name, designation}) => {
+  const Item = ({ image, name, designation }) => {
     return (
-        <div className='group w-fit'>
-            <div className='rounded-full border border-primary-pink hover:border-yellow-600 p-2 mt-10 hover:scale-105 transition-all pinkshadow ' >
-                <img src={image} height={100} width={100} className='grayscale hover:grayscale-0 transition-all cursor-pointer rounded-full outline outline-primary-blue ' />
-            </div>
-            <h2 className='text-center text-xl group-hover:mt-3 transition-all'>{name}</h2>
-            <h2 className='hidden group-hover:block text-center group-hover:text-yellow-500 transition-all'>{designation}</h2>
+      <div className="group w-fit">
+        <div className="rounded-full border border-primary-pink hover:border-yellow-600 p-2 mt-10 hover:scale-105 transition-all pinkshadow ">
+          <img
+            src={image}
+            className="aspect-square w-[100px] object-cover grayscale hover:grayscale-0 transition-all cursor-pointer rounded-full outline outline-primary-blue "
+          />
         </div>
-    )
-  }
+        <h2 className="text-center text-xl group-hover:mt-3 transition-all">
+          {name}
+        </h2>
+        <h2 className="hidden group-hover:block text-center group-hover:text-yellow-500 transition-all">
+          {designation}
+        </h2>
+      </div>
+    );
+  };
+
+  const teams = {
+    tech: [
+      {
+        image: "/team/Animesh Sahu.jpg",
+        name: "Animesh Sahu",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Prince Singh.jpeg",
+        name: "Prince Singh",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Aditya Yadav.jpg",
+        name: "Aditya Yadav",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Monark.png",
+        name: "Monark Jain",
+        designation: "Executive",
+      },
+    ],
+    cr: [
+      {
+        image: "/team/Advit Mahale.jpg",
+        name: "Advit Mahale",
+        designation: "Lead",
+      },
+      {
+        image: "/team/karthik.jpeg",
+        name: "Karthik S",
+        designation: "Lead",
+      },
+    ],
+    pr: [],
+    logistics: [
+      {
+        image: "/team/Gaurav Kabra.jpg",
+        name: "Gaurav Kabra",
+        designation: "Lead",
+      },
+      {
+        image: "/team/anshu.png",
+        name: "Anshu Verma",
+        designation: "Lead",
+      },
+    ],
+    content: [],
+    design: [],
+  };
 
   return (
     <ThemeProvider theme={darkTheme}>
       <Box
-        sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224, marginTop:2, width: '100vw' }}
+        sx={{
+          flexGrow: 1,
+          bgcolor: "background.paper",
+          display: "flex",
+          height: 224,
+          marginTop: 2,
+          width: "100vw",
+        }}
       >
         <Tabs
           orientation="vertical"
@@ -75,7 +141,7 @@ export default function VerticalTabs() {
           value={value}
           onChange={handleChange}
           aria-label="Vertical tabs example"
-          sx={{ borderRight: 1, borderColor: 'divider' }}
+          sx={{ borderRight: 1, borderColor: "divider" }}
         >
           <Tab label="Tech" {...a11yProps(0)} />
           <Tab label="CR" {...a11yProps(1)} />
@@ -84,32 +150,20 @@ export default function VerticalTabs() {
           <Tab label="Operations" {...a11yProps(4)} />
           <Tab label="Logistics" {...a11yProps(5)} />
         </Tabs>
-        <TabPanel value={value} index={0}>
-            <div className='flex flex-wrap md:justify-between w-[50vw] md:w-[60vw] gap-x-5 sm:gap-x-20 md:gap-x-10 md:me-10'>
-                <Item image="/Monark.png" name="Monark Jain" designation="Lead dev" />
-                <Item image="/Monark.png" name="Monark Jain" designation="Lead dev" />
-                <Item image="/Monark.png" name="Monark Jain" designation="Lead dev" />
-                <Item image="/Monark.png" name="Monark Jain" designation="Lead dev" />
+        {Object.keys(teams).map((team, index) => (
+          <TabPanel key={team} value={value} index={index}>
+            <div className="flex flex-wrap md:justify-around w-[50vw] md:w-[60vw] gap-x-5 sm:gap-x-20 md:gap-x-10 md:me-10">
+              {teams[team].map((item, key) => (
+                <Item
+                  key={key}
+                  image={item.image}
+                  name={item.name}
+                  designation={item.designation}
+                />
+              ))}
             </div>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          Item Three
-        </TabPanel>
-        <TabPanel value={value} index={3}>
-          Item Four
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-          Item Five
-        </TabPanel>
-        <TabPanel value={value} index={5}>
-          Item Six
-        </TabPanel>
-        <TabPanel value={value} index={6}>
-          Item Seven
-        </TabPanel>
+          </TabPanel>
+        ))}
       </Box>
     </ThemeProvider>
   );

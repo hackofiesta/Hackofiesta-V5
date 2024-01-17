@@ -36,39 +36,16 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = useState(0);
-  const [fontSize,setFontSize] = useState("24px")
-  const [TechTeam, _] = useState([
-    {
-        name:"Shivam Patil",
-        image:""
-    },
-    {
-        name:"Mohammed Asim",
-        image:""
-    },
-    {
-        name:"Monark Jain",
-        image:""
-    },
-    {
-        name:"Ankit Yadav",
-        image:""
-    },
-  ]);
   const handleChange = (event, newValue) => {
     event.preventDefault();
     setValue(newValue);
   };
 
-//   useEffect(()=>{
-//     if(window.innerWidth<700){
-//         setFontSize("12px")
-//     }
-//   },[])
-
   return (
     <div className="w-screen  items-center justify-center verticalTabs pt-32">
-      <div className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl pt-6 pb-6 acc_style text-center `}>
+      <div
+        className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl pt-6 pb-6 acc_style text-center `}
+      >
         Teams
       </div>
       <VerticalTabs />
