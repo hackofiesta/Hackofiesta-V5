@@ -5,6 +5,8 @@ import { Hero, HeroProps } from "@lobehub/ui";
 import { useInView } from "react-intersection-observer";
 import { useRouter } from "next/navigation";
 import { myFont } from "../common/AnimatedTitle";
+import Lottie from "lottie-react";
+import Hello from '../../../public/hello.json'
 import {
   GradientButton,
   GradientButtonProps,
@@ -74,7 +76,7 @@ const About = () => {
   //   }
   // }, [scrollDiv]);
   return (
-    <ThemeProvider themeMode="dark">
+    <div>
       <motion.div
         ref={ref}
         animate={controls}
@@ -117,17 +119,14 @@ const About = () => {
                 className="flex w-[250px] lg:w-[375px] md:w-[300px] sm:w-[250px] xl:w-[420px] "
                 id="creatorsPoint"
               >
-                <img
-                  src="/about_gif.gif"
-                  className="w-full h-full"
-                  alt=""
-                />
+               
+                <Lottie className="scale-110" animationData={Hello} loop={true} />
               </div>
             </motion.div>
           </div>
         </div>
       </motion.div>
-    </ThemeProvider>
+    </div>
   );
 };
 

@@ -25,7 +25,7 @@ const HeroSection = () => {
   //   btn.classList.add("tooltip")
   // },[])
   return (
-    <ThemeProvider themeMode="dark">
+    <div>
       <div
         id="hero"
         className="h-screen relative bg-black flex flex-col sm:pt-0 pt-[30px] sm:justify-start"
@@ -130,7 +130,7 @@ const HeroSection = () => {
         </motion.div>
         <div id="about"></div>
       </div>
-    </ThemeProvider>
+    </div>
   );
 };
 
