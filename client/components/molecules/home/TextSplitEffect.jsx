@@ -113,7 +113,7 @@ const TextSplitEffect = () => {
               <div
                 ref={ref3}
                 style={{
-                  height: "10vw",
+                  height: "14vw",
                   top: "20%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
@@ -123,7 +123,7 @@ const TextSplitEffect = () => {
               >
                 <div
                   style={{
-                    height: "4vw",
+                    height: "7vw",
                   }}
                   ref={ref1}
                   className="mb-0 overflow-hidden"
@@ -133,14 +133,14 @@ const TextSplitEffect = () => {
                   </div>
                 </div>
                 <div
-                  style={{ height: "6vw" }}
+                  style={{ height: "7vw" }}
                   ref={ref2}
                   className=" overflow-hidden"
                 >
                   <div
                     style={{
                       fontSize: "10vw",
-                      transform: "translateY(-4vw)",
+                      transform: "translateY(-7vw)",
                     }}
                     className={`h-full ${myFont.className}`}
                   >

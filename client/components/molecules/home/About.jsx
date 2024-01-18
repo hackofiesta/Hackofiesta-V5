@@ -6,14 +6,14 @@ import { useInView } from "react-intersection-observer";
 import { useRouter } from "next/navigation";
 import { myFont } from "../common/AnimatedTitle";
 import Lottie from "lottie-react";
-import Hello from '../../../public/hello.json'
+import Hello from "../../../public/hello.json";
 import {
   GradientButton,
   GradientButtonProps,
   StoryBook,
   useControls,
   useCreateStore,
-} from '@lobehub/ui';
+} from "@lobehub/ui";
 
 import { ThemeProvider } from "@lobehub/ui";
 
@@ -21,14 +21,14 @@ const About = () => {
   const store = useCreateStore();
   const control = useControls(
     {
-      children: 'Get a Demo',
+      children: "Get a Demo",
       glow: true,
       size: {
-        options: ['large', 'normal', 'small'],
-        value: 'large',
+        options: ["large", "normal", "small"],
+        value: "large",
       },
     },
-    { store },
+    { store }
   );
   const scrollDiv = useRef(null);
   const [onlyOnce, setOnlyOnce] = useState(true);
@@ -88,13 +88,16 @@ const About = () => {
           style={{ height: "50vh" }}
         >
           <motion.div>
-            <h1 className={`text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center ${myFont.className} sm:text-5xl xl:text-6xl xl:mt-8 font-[mokoto]`}  >
+            <h1
+              className={`text-3xl mb-2 lg:mb-3 xl:-mb-1 text-center ${myFont.className} sm:text-5xl xl:text-6xl xl:mt-8 font-[mokoto]`}
+            >
               HackoFiesta
             </h1>
             <div className="px-4 sm:mr-0 text-gray-500 text-center sm:px-2 w-screen text-base xl:text-2xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
-              It is the biggest offline hackathon in Uttar Pradesh, conducted by IIIT
-              Lucknow. Tune in to 36 hours of creativity, coding and collaboration
-              leading to some of the most innovative hacks you have ever seen.
+              It is the biggest offline hackathon in Uttar Pradesh, conducted by
+              IIIT Lucknow. Tune in to 36 hours of creativity, coding and
+              collaboration leading to some of the most innovative hacks you
+              have ever seen.
             </div>
             <div className="flex justify-center btnDiv">
               {/* <button className="button-glitch mx-5 flex items-center my-2">
@@ -102,15 +105,16 @@ const About = () => {
             </button> */}
 
               <Hero
-                actions={[{
-                  icon: "Discord",
-                  text: "Know More",
-                  type: "primary",
-                }]}
-              // description="Lobe UI is an open-source UI component library for <br/>building chatbot web apps"
-              // title="Lobe <b>UI</b>"
+                actions={[
+                  {
+                    icon: "Discord",
+                    text: "Know More",
+                    type: "primary",
+                  },
+                ]}
+                // description="Lobe UI is an open-source UI component library for <br/>building chatbot web apps"
+                // title="Lobe <b>UI</b>"
               />
-
             </div>
           </motion.div>
           <div className="flex justify-center xl:mr-32 xl:mt-28 lg:mt-24 md:mt-20 sm:mt-16">
@@ -119,8 +123,11 @@ const About = () => {
                 className="flex w-[250px] lg:w-[375px] md:w-[300px] sm:w-[250px] xl:w-[420px] "
                 id="creatorsPoint"
               >
-               
-                <Lottie className="scale-110" animationData={Hello} loop={true} />
+                <Lottie
+                  className="scale-110"
+                  animationData={Hello}
+                  loop={true}
+                />
               </div>
             </motion.div>
           </div>
