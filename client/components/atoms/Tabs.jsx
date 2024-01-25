@@ -94,6 +94,28 @@ export default function VerticalTabs() {
         designation: "Lead",
       },
     ],
+    Core:[
+      {
+        image: "/team/Prince Singh.jpeg",
+        name: "Prince Singh",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Aditya Yadav.jpg",
+        name: "Aditya Yadav",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Animesh Sahu.jpg",
+        name: "Animesh Sahu",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Deep.jpeg",
+        name: "Deep",
+        designation: "Executive",
+      },
+    ],
     cr: [
       {
         image: "/team/Advit Mahale.jpg",
@@ -106,7 +128,6 @@ export default function VerticalTabs() {
         designation: "Lead",
       },
     ],
-    pr: [],
     logistics: [
       {
         image: "/team/Gaurav Kabra.jpg",
@@ -119,6 +140,7 @@ export default function VerticalTabs() {
         designation: "Lead",
       },
     ],
+    pr: [],
     content: [],
     design: [],
   };
@@ -130,10 +152,11 @@ export default function VerticalTabs() {
           flexGrow: 1,
           bgcolor: "background.paper",
           display: "flex",
-          height: 224,
+          // height: 224,
           marginTop: 2,
           width: "100vw",
         }}
+        className="lg:mb-44 md:mb-20 mb-0"
       >
         <Tabs
           orientation="vertical"
@@ -144,11 +167,12 @@ export default function VerticalTabs() {
           sx={{ borderRight: 1, borderColor: "divider" }}
         >
           <Tab label="Tech" {...a11yProps(0)} />
-          <Tab label="CR" {...a11yProps(1)} />
-          <Tab label="PR" {...a11yProps(2)} />
-          <Tab label="Content" {...a11yProps(3)} />
-          <Tab label="Operations" {...a11yProps(4)} />
-          <Tab label="Logistics" {...a11yProps(5)} />
+          <Tab label="Core" {...a11yProps(1)} />
+          <Tab label="CR" {...a11yProps(2)} />
+          {/* <Tab label="PR" {...a11yProps(2)} /> */}
+          <Tab label="Logistics" {...a11yProps(3)} />
+          {/* <Tab label="Content" {...a11yProps(3)} /> */}
+          {/* <Tab label="Operations" {...a11yProps(4)} /> */}
         </Tabs>
         {Object.keys(teams).map((team, index) => (
           <TabPanel key={team} value={value} index={index}>
