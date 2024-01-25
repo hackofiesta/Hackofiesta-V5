@@ -74,24 +74,24 @@ export default function VerticalTabs() {
   const teams = {
     tech: [
       {
-        image: "/team/Animesh Sahu.jpg",
-        name: "Animesh Sahu",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Prince Singh.jpeg",
-        name: "Prince Singh",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Aditya Yadav.jpg",
-        name: "Aditya Yadav",
-        designation: "Lead",
-      },
-      {
         image: "/team/Monark.png",
         name: "Monark Jain",
         designation: "Executive",
+      },
+      {
+        image: "/team/asim.jpg",
+        name: "Asim",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Ankit Yadav.jpg",
+        name: "Ankit Yadav",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Shivam.jpg",
+        name: "Shivam Patil",
+        designation: "Lead",
       },
     ],
     cr: [
