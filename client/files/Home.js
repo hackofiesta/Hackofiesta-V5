@@ -11,6 +11,7 @@ import Sponsors from "@/components/molecules/sponsors/Sponsors";
 import RequestToJoin from "@/components/molecules/home/RequestToJoin";
 import Team from "@/components/molecules/home/Team";
 import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
+import Prizes from "@/components/molecules/prize-section/Prizes";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -40,6 +41,7 @@ const Home = () => {
           <HeroSection/>
           <TextSplitEffect/>
           <RequestToJoin/>
+          <Prizes/>
           <Stats/>
           <Sponsors/>
           <Team/>
