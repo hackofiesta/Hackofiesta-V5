@@ -34,13 +34,13 @@ const Stats = () => {
             {
               description:
                 "Leverage Generative AI and Machine Learning to develop apps that enhance automation, analysis, and decision-making.",
-              icon: MoonStar,
+              icon: Zap,
               title: "AI/ML",
             },
             {
               description:
                 " Dive into the world of smart contracts, DeFi protocols and the decentralized web. Build the next frontier of the internet.",
-              icon: Palette,
+              icon: Zap,
               title: "BLOCKCHAIN & WEB3",
             },
             {
@@ -52,7 +52,7 @@ const Stats = () => {
             {
               description:
                 "This track welcomes diverse and boundary-pushing ideas, using emerging technologies ",
-              icon: MoonStar,
+              icon: Zap,
               title: "OPEN",
             },
           ]}

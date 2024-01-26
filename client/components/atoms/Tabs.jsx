@@ -54,16 +54,18 @@ export default function VerticalTabs() {
 
   const Item = ({ image, name, designation }) => {
     return (
-      <div className="group w-fit">
-        <div className="rounded-full border border-primary-pink hover:border-yellow-600 p-2 mt-10 hover:scale-105 transition-all pinkshadow ">
-          <img
-            src={image}
-            className="aspect-square w-[100px] object-cover grayscale hover:grayscale-0 transition-all cursor-pointer rounded-full outline outline-primary-blue "
-          />
+      <div className="group w-fit ">
+        <div className="flex flex-col items-center">
+          <div className="rounded-full border w-fit border-primary-pink hover:border-yellow-600 p-2 mt-10 hover:scale-105 transition-all pinkshadow ">
+            <img
+              src={image}
+              className="aspect-square w-[100px] object-cover grayscale hover:grayscale-0 transition-all cursor-pointer rounded-full outline outline-primary-blue "
+            />
+          </div>
+          <h2 className="text-center text-xl group-hover:mt-3 transition-all">
+            {name}
+          </h2>
         </div>
-        <h2 className="text-center text-xl group-hover:mt-3 transition-all">
-          {name}
-        </h2>
         <h2 className="hidden group-hover:block text-center group-hover:text-yellow-500 transition-all">
           {designation}
         </h2>
@@ -80,21 +82,21 @@ export default function VerticalTabs() {
       },
       {
         image: "/team/asim.jpg",
-        name: "Asim",
-        designation: "Lead",
+        name: "Mohammed Asim Ahmed",
+        designation: "Executive",
       },
       {
         image: "/team/Ankit Yadav.jpg",
         name: "Ankit Yadav",
-        designation: "Lead",
+        designation: "Executive",
       },
       {
         image: "/team/Shivam.jpg",
         name: "Shivam Patil",
-        designation: "Lead",
+        designation: "Executive",
       },
     ],
-    Core:[
+    Core: [
       {
         image: "/team/Prince Singh.jpeg",
         name: "Prince Singh",
@@ -140,9 +142,32 @@ export default function VerticalTabs() {
         designation: "Lead",
       },
     ],
-    pr: [],
+    pr: [
+      {
+        image: "/team/Vikash Kumar Yadav.jpg",
+        name: "Vikash Kumar Yadav",
+        designation: "Executive",
+      },
+    ],
     content: [],
     design: [],
+    core: [
+      {
+        image: "/team/Animesh Sahu.jpg",
+        name: "Animesh Sahu",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Prince Singh.jpeg",
+        name: "Prince Singh",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Aditya Yadav.jpg",
+        name: "Aditya Yadav",
+        designation: "Lead",
+      },
+    ],
   };
 
   return (
@@ -169,25 +194,27 @@ export default function VerticalTabs() {
           <Tab label="Tech" {...a11yProps(0)} />
           <Tab label="Core" {...a11yProps(1)} />
           <Tab label="CR" {...a11yProps(2)} />
-          {/* <Tab label="PR" {...a11yProps(2)} /> */}
           <Tab label="Logistics" {...a11yProps(3)} />
+          <Tab label="PR" {...a11yProps(4)} />
           {/* <Tab label="Content" {...a11yProps(3)} /> */}
           {/* <Tab label="Operations" {...a11yProps(4)} /> */}
         </Tabs>
-        {Object.keys(teams).map((team, index) => (
-          <TabPanel key={team} value={value} index={index}>
-            <div className="flex flex-wrap md:justify-around w-[50vw] md:w-[60vw] gap-x-5 sm:gap-x-20 md:gap-x-10 md:me-10">
-              {teams[team].map((item, key) => (
-                <Item
-                  key={key}
-                  image={item.image}
-                  name={item.name}
-                  designation={item.designation}
-                />
-              ))}
-            </div>
-          </TabPanel>
-        ))}
+        <div className=" overflow-y-auto pb-10 overflow-x-hidden">
+          {Object.keys(teams).map((team, index) => (
+            <TabPanel key={team} value={value} index={index}>
+              <div className="flex justify-center flex-wrap md:justify-around w-[50vw] md:w-[60vw] gap-x-5 sm:gap-x-20 md:gap-x-10 md:me-10">
+                {teams[team].map((item, key) => (
+                  <Item
+                    key={key}
+                    image={item.image}
+                    name={item.name}
+                    designation={item.designation}
+                  />
+                ))}
+              </div>
+            </TabPanel>
+          ))}
+        </div>
       </Box>
     </ThemeProvider>
   );

@@ -76,7 +76,7 @@ const TextReveal = ({ customText, val }) => {
 
   return (
     <motion.div ref={ref} animate={controls} {...animationOptions} className="m-0 overflow-hidden">
-      <div className="reveal-text lg:text-8xl md:text-4xl sm:text-3xl text-2xl overflow-hidden">
+      <div className="reveal-text lg:text-8xl md:text-4xl sm:text-3xl text-3xl overflow-hidden">
         {displayIt && (
           <p className={`${myFont.className} mx-auto text-center`}>
             {text.split("").map((char, index) => (
