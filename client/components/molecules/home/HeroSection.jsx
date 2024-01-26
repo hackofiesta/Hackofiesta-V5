@@ -11,7 +11,7 @@ const HeroSection = () => {
   const actions = [
     {
       icon: "Discord",
-      link: "https://discord.com/invite/8VK8jMt63j",
+      link: "https://discord.gg/TQnjFNJYBP",
       text: "Discord",
       type: "primary",
     },

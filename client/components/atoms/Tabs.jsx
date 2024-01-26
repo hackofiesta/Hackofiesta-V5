@@ -83,17 +83,17 @@ export default function VerticalTabs() {
       {
         image: "/team/asim.jpg",
         name: "Mohammed Asim Ahmed",
-        designation: "Lead",
+        designation: "Executive",
       },
       {
         image: "/team/Ankit Yadav.jpg",
         name: "Ankit Yadav",
-        designation: "Lead",
+        designation: "Executive",
       },
       {
         image: "/team/Shivam.jpg",
         name: "Shivam Patil",
-        designation: "Lead",
+        designation: "Executive",
       },
     ],
     Core: [
