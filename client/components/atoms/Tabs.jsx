@@ -100,22 +100,22 @@ export default function VerticalTabs() {
       {
         image: "/team/Prince Singh.jpeg",
         name: "Prince Singh",
-        designation: "Executive",
+        designation: "Lead",
       },
       {
         image: "/team/Aditya Yadav.jpg",
         name: "Aditya Yadav",
-        designation: "Executive",
+        designation: "Lead",
       },
       {
         image: "/team/Animesh Sahu.jpg",
         name: "Animesh Sahu",
-        designation: "Executive",
+        designation: "Lead",
       },
       {
         image: "/team/Deep.jpeg",
         name: "Deep",
-        designation: "Executive",
+        designation: "Lead",
       },
     ],
     cr: [
