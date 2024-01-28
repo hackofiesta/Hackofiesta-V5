@@ -12,6 +12,7 @@ import RequestToJoin from "@/components/molecules/home/RequestToJoin";
 import Team from "@/components/molecules/home/Team";
 import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
 import Prizes from "@/components/molecules/prize-section/Prizes";
+import WantToSponsor from "@/components/molecules/sponsors/WantToSponsor";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -46,6 +47,7 @@ const Home = () => {
           <Sponsors/>
           <Team/>
           <Accordian/>
+          <WantToSponsor/>
           <Footerr />
         </>
       )}  

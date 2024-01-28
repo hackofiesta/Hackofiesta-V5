@@ -302,8 +302,9 @@ const Footerr = () => {
             </div>
           </div>
         </section>
-        <section className="mt-12">
-          <div className="text-center text-base font-bold tracking-wide text-slate-500">
+        <section className="text-center mt-6"><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a></section>
+        <section>
+          <div className="text-center text-base font-bold mt-1 tracking-wide text-slate-500">
             Equinox © 2024
           </div>
         </section>
