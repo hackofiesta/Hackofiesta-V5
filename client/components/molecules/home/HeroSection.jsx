@@ -16,6 +16,7 @@ const HeroSection = () => {
       type: "primary",
     },
     {
+      link: "https://bizthon.com/HackOFiesta.html",
       text: "Register",
       type: "primary",
     },
