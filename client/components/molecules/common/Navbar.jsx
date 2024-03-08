@@ -64,7 +64,7 @@ const Navbar = () => {
       ref={refNav}
       className="flex sticky min-h-24 bg-black sm:justify-normal justify-between top-0 backdrop-blur-md z-10"
     >
-      <div className="opacity-50">
+      {/* <div className="opacity-50">
         <p className="grayscale text-[#122f4c] absolute ml-[36px] md:ml-[38px] text-black font-extrabold text-[8px] md:text-xs z-10">
           AWAITING
         </p>
@@ -72,7 +72,7 @@ const Navbar = () => {
           src={"/mlh-trust-badge-2024-white.svg"}
           className="absolute ml-8 w-[56px] md:w-[76px] grayscale"
         />
-      </div>
+      </div> */}
       <div className="md:flex hidden gap-20 self-center justify-center text-xl px-10 py-8 word-spacing tracking-tight text-white  w-full top-0 z-10">
         <span
           className="hover-underline-animation cursor-pointer hover:text-primary-blue transition-colors"
