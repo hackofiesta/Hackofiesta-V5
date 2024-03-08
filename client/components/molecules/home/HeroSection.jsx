@@ -128,6 +128,7 @@ const HeroSection = () => {
             // description="Lobe UI is an open-source UI component library for <br/>building chatbot web apps"
             // title="Lobe <b>UI</b>"
           />
+          <p className="text-center font-bold text-xl mt-[-15px]">IDEATION ROUND HAS ALREADY BEGUN</p>
         </motion.div>
         <div id="about"></div>
       </div>

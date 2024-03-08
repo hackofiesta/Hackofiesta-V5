@@ -526,7 +526,7 @@ body {
 }
 
 .ant-btn::after {
-  content: "Coming Soon";
+  /* content: "Coming Soon"; */
   height: 3rem;
   display: flex;
   border-radius: 10px;
