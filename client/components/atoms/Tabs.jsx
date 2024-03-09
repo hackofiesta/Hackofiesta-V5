@@ -76,13 +76,18 @@ export default function VerticalTabs() {
   const teams = {
     tech: [
       {
+        image: "/team/asim.jpg",
+        name: "Mohammed Asim Ahmed",
+        designation: "Executive",
+      },
+      {
         image: "/team/Monark.png",
         name: "Monark Jain",
         designation: "Executive",
       },
       {
-        image: "/team/asim.jpg",
-        name: "Mohammed Asim Ahmed",
+        image: "/team/Akshat Bhansali.PNG",
+        name: "Akshat Bhansali",
         designation: "Executive",
       },
       {
@@ -95,8 +100,6 @@ export default function VerticalTabs() {
         name: "Shivam Patil",
         designation: "Executive",
       },
-    ],
-    Core: [
       {
         image: "/team/Prince Singh.jpeg",
         name: "Prince Singh",
@@ -113,11 +116,28 @@ export default function VerticalTabs() {
         designation: "Lead",
       },
       {
-        image: "/team/Deep.jpeg",
-        name: "Deep",
-        designation: "Lead",
+        image: "/team/Akshat Bhansali.PNG",
+        name: "Akshat Bhansali",
+        designation: "Executive",
       },
     ],
+    // Core: [
+    //   {
+    //     image: "/team/Prince Singh.jpeg",
+    //     name: "Prince Singh",
+    //     designation: "Lead",
+    //   },
+    //   {
+    //     image: "/team/Aditya Yadav.jpg",
+    //     name: "Aditya Yadav",
+    //     designation: "Lead",
+    //   },
+    //   {
+    //     image: "/team/Animesh Sahu.jpg",
+    //     name: "Animesh Sahu",
+    //     designation: "Lead",
+    //   },
+    // ],
     cr: [
       {
         image: "/team/Advit Mahale.jpg",
@@ -128,6 +148,23 @@ export default function VerticalTabs() {
         image: "/team/karthik.jpeg",
         name: "Karthik S",
         designation: "Lead",
+      },
+      {
+        image: "/team/Kota_Karthik_CR_team.jpg",
+        name: "Kota Karthik",
+        designation: "Executive",
+      },
+    ],
+    pr: [
+      {
+        image: "/team/Shreya Singh.jpg",
+        name: "Shreya Singh",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Dhruv Bharuka.jpg",
+        name: "Dhruv Bharuka",
+        designation: "Executive",
       },
     ],
     logistics: [
@@ -141,33 +178,58 @@ export default function VerticalTabs() {
         name: "Anshu Verma",
         designation: "Lead",
       },
-    ],
-    pr: [
       {
-        image: "/team/Vikash Kumar Yadav.jpg",
-        name: "Vikash Kumar Yadav",
+        image: "/team/Deep.jpeg",
+        name: "Deepak Chattwani",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Mudit.jpg",
+        name: "Mudit",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Aarav_Saini.jpg",
+        name: "Aarav Saini",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Sarthak.jpg",
+        name: "Sarthak",
         designation: "Executive",
       },
     ],
-    content: [],
-    design: [],
-    core: [
+    content: [
       {
-        image: "/team/Animesh Sahu.jpg",
-        name: "Animesh Sahu",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Prince Singh.jpeg",
-        name: "Prince Singh",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Aditya Yadav.jpg",
-        name: "Aditya Yadav",
-        designation: "Lead",
+        image: "/team/Sreekar.jpg",
+        name: "Sreekar",
+        designation: "Executive",
       },
     ],
+    design: [
+      {
+        image: "/team/MayankRawat.jpeg",
+        name: "MayankRawat",
+        designation: "Executive",
+      },
+    ],
+    // core: [
+    //   {
+    //     image: "/team/Animesh Sahu.jpg",
+    //     name: "Animesh Sahu",
+    //     designation: "Lead",
+    //   },
+    //   {
+    //     image: "/team/Prince Singh.jpeg",
+    //     name: "Prince Singh",
+    //     designation: "Lead",
+    //   },
+    //   {
+    //     image: "/team/Aditya Yadav.jpg",
+    //     name: "Aditya Yadav",
+    //     designation: "Lead",
+    //   },
+    // ],
   };
 
   return (
@@ -192,11 +254,12 @@ export default function VerticalTabs() {
           sx={{ borderRight: 1, borderColor: "divider" }}
         >
           <Tab label="Tech" {...a11yProps(0)} />
-          <Tab label="Core" {...a11yProps(1)} />
-          <Tab label="CR" {...a11yProps(2)} />
-          <Tab label="Logistics" {...a11yProps(3)} />
-          <Tab label="PR" {...a11yProps(4)} />
-          {/* <Tab label="Content" {...a11yProps(3)} /> */}
+          <Tab label="CR" {...a11yProps(1)} />
+          <Tab label="PR" {...a11yProps(2)} />
+          <Tab label="Logistics & Operations" {...a11yProps(3)} />
+          <Tab label="Content & Budgeting" {...a11yProps(4)} />
+          <Tab label="Design" {...a11yProps(5)} />
+          {/* <Tab label="Core" {...a11yProps(1)} /> */}
           {/* <Tab label="Operations" {...a11yProps(4)} /> */}
         </Tabs>
         <div className=" overflow-y-auto pb-10 overflow-x-hidden">
