@@ -129,6 +129,7 @@ const HeroSection = () => {
             // title="Lobe <b>UI</b>"
           />
           <p className="text-center font-bold text-xl mt-[-15px]">IDEATION ROUND HAS ALREADY BEGUN</p>
+          <p className="text-center font-bold text-xl">Register and Submit your ideas before 20th March</p>
         </motion.div>
         <div id="about"></div>
       </div>

@@ -74,6 +74,48 @@ export default function VerticalTabs() {
   };
 
   const teams = {
+     Core: [
+      {
+        image: "/team/Gaurav Kabra.jpg",
+        name: "Gaurav Kabra",
+        designation: "Lead",
+      },
+      {
+        image: "/team/anshu.png",
+        name: "Anshu Verma",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Deep.jpeg",
+        name: "Deepak Chattwani",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Prince Singh.jpeg",
+        name: "Prince Singh",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Aditya Yadav.jpg",
+        name: "Aditya Yadav",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Animesh Sahu.jpg",
+        name: "Animesh Sahu",
+        designation: "Lead",
+      },
+      {
+        image: "/team/Advit Mahale.jpg",
+        name: "Advit Mahale",
+        designation: "Lead",
+      },
+      {
+        image: "/team/karthik.jpeg",
+        name: "Karthik S",
+        designation: "Lead",
+      },
+    ],
     tech: [
       {
         image: "/team/asim.jpg",
@@ -101,54 +143,12 @@ export default function VerticalTabs() {
         designation: "Executive",
       },
       {
-        image: "/team/Prince Singh.jpeg",
-        name: "Prince Singh",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Aditya Yadav.jpg",
-        name: "Aditya Yadav",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Animesh Sahu.jpg",
-        name: "Animesh Sahu",
-        designation: "Lead",
-      },
-      {
         image: "/team/Akshat Bhansali.PNG",
         name: "Akshat Bhansali",
         designation: "Executive",
       },
     ],
-    // Core: [
-    //   {
-    //     image: "/team/Prince Singh.jpeg",
-    //     name: "Prince Singh",
-    //     designation: "Lead",
-    //   },
-    //   {
-    //     image: "/team/Aditya Yadav.jpg",
-    //     name: "Aditya Yadav",
-    //     designation: "Lead",
-    //   },
-    //   {
-    //     image: "/team/Animesh Sahu.jpg",
-    //     name: "Animesh Sahu",
-    //     designation: "Lead",
-    //   },
-    // ],
     cr: [
-      {
-        image: "/team/Advit Mahale.jpg",
-        name: "Advit Mahale",
-        designation: "Lead",
-      },
-      {
-        image: "/team/karthik.jpeg",
-        name: "Karthik S",
-        designation: "Lead",
-      },
       {
         image: "/team/Kota_Karthik_CR_team.jpg",
         name: "Kota Karthik",
@@ -168,21 +168,6 @@ export default function VerticalTabs() {
       },
     ],
     logistics: [
-      {
-        image: "/team/Gaurav Kabra.jpg",
-        name: "Gaurav Kabra",
-        designation: "Lead",
-      },
-      {
-        image: "/team/anshu.png",
-        name: "Anshu Verma",
-        designation: "Lead",
-      },
-      {
-        image: "/team/Deep.jpeg",
-        name: "Deepak Chattwani",
-        designation: "Lead",
-      },
       {
         image: "/team/Mudit.jpg",
         name: "Mudit",
@@ -213,23 +198,6 @@ export default function VerticalTabs() {
         designation: "Executive",
       },
     ],
-    // core: [
-    //   {
-    //     image: "/team/Animesh Sahu.jpg",
-    //     name: "Animesh Sahu",
-    //     designation: "Lead",
-    //   },
-    //   {
-    //     image: "/team/Prince Singh.jpeg",
-    //     name: "Prince Singh",
-    //     designation: "Lead",
-    //   },
-    //   {
-    //     image: "/team/Aditya Yadav.jpg",
-    //     name: "Aditya Yadav",
-    //     designation: "Lead",
-    //   },
-    // ],
   };
 
   return (
@@ -253,12 +221,13 @@ export default function VerticalTabs() {
           aria-label="Vertical tabs example"
           sx={{ borderRight: 1, borderColor: "divider" }}
         >
-          <Tab label="Tech" {...a11yProps(0)} />
-          <Tab label="CR" {...a11yProps(1)} />
-          <Tab label="PR" {...a11yProps(2)} />
-          <Tab label="Logistics & Operations" {...a11yProps(3)} />
-          <Tab label="Content & Budgeting" {...a11yProps(4)} />
-          <Tab label="Design" {...a11yProps(5)} />
+          <Tab label="Core" {...a11yProps(0)} />
+          <Tab label="Tech" {...a11yProps(1)} />
+          <Tab label="CR" {...a11yProps(2)} />
+          <Tab label="PR" {...a11yProps(3)} />
+          <Tab label="Logistics & Operations" {...a11yProps(4)} />
+          <Tab label="Content & Budgeting" {...a11yProps(5)} />
+          <Tab label="Design" {...a11yProps(6)} />
           {/* <Tab label="Core" {...a11yProps(1)} /> */}
           {/* <Tab label="Operations" {...a11yProps(4)} /> */}
         </Tabs>
