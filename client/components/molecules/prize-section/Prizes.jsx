@@ -29,15 +29,13 @@ const Prizes = () => {
         <div className="flex  w-[100%] md:hidden justify-center items-center">
           <Lottie animationData={Trophy} loop={true} className="scale-75" />
         </div>
-        <div className="flex lg:w-[70%] w-full justify-center md:mt-24">
+
+        <div className="flex  flex-wrap   w-full justify-evenly   md:mt-12">
           <PrizeCard Rank="Winners" Price="₹50,000" />
-        </div>
-        <div className="lg:w-[70%] w-full flex-wrap flex gap-x-8 sm:justify-between justify-center">
           <PrizeCard Rank="Runners-Up" Price="₹30,000" />
           <PrizeCard Rank="Third Place" Price="₹20,000" />
         </div>
-        
-        <div className="flex  flex-wrap   w-full justify-evenly   md:mt-24">
+        <div className="flex  flex-wrap   w-full justify-evenly   md:mt-8">
           <PrizeCard Rank="Diversity" Price="₹15,000" />
           <PrizeCard Rank="Beginner's Track" Price="₹25,000" />
           <PrizeCard Rank="Most Creative Web3 Idea" Price="₹5,000" />
