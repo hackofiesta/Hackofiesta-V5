@@ -10,7 +10,7 @@ const Timer = () => {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("March 25,2024 ").getTime();
+    const countDownDate = new Date("March 1,2024").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -70,7 +70,8 @@ const Timer = () => {
         </section>
       </section>
       <div class="text-center font-bold text-xl text-yellow-600 mt-4">
-        5th April - 7th April
+        Registrations open!
+        <br /> Submit your ideas NOW
       </div>
     </div>
   );
