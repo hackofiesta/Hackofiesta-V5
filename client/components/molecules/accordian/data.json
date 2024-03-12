@@ -1,7 +1,15 @@
 [
   {
     "header": "📅 When and where is Hack-o-Fiesta taking place?",
-    "details": ["Registration for the online round opens on February 1st. Submissions will be accepted starting from March 1st. For those shortlisted as finalists, the offline event will be held in Lucknow from March 29th to 31st. Join us for an exciting journey!"]
+    "details": [
+      "Registration for the online round opens on February 1st. Submissions will be accepted starting from March 1st. For those shortlisted as finalists, the offline event will be held in Lucknow from April 5th to 7th. Join us for an exciting journey!"
+    ]
+  },
+  {
+    "header": "💰 I can't come to Lucknow. What's in it for me?",
+    "details": [
+      "You can still bag the prize money for the Most Creative Web3 Idea and the Most Creative AI Idea! Be sure to submit your ideas before 20th March to get a chance to pitch to International VCs in Dubai and access to exclusive mentorship."
+    ]
   },
   {
     "header": "👥 What are the team size requirements for participating in Hack-o-Fiesta?",
@@ -13,51 +21,75 @@
   },
   {
     "header": "💵 Does Hack-o-Fiesta sponsor the accomodation and travel?",
-    "details": ["Accomodation facilities, with separate accomodation for women shall be provided during the 36 hour event. Reimbursement of travel fees can't be guaranteed as HOF is completely student-run, but we shall try our level best to make it a possibility."]
+    "details": [
+      "Accomodation facilities, with separate accomodation for women shall be provided during the 36 hour event. Reimbursement of travel fees can't be guaranteed as HOF is completely student-run, but we shall try our level best to make it a possibility."
+    ]
   },
   {
     "header": "🌈 Are there any special tracks for encouraging beginners and underrepresented genders in Hack-o-Fiesta?",
-    "details": ["Yes, we have 'Diversity Track' and 'Beginners Only Track' to promote inclusivity and encourage participants from all backgrounds."]
+    "details": [
+      "Yes, we have 'Diversity Track' and 'Beginners Only Track' to promote inclusivity and encourage participants from all backgrounds."
+    ]
   },
   {
     "header": "🔄 How are teams selected for Hack-o-Fiesta, and can I form a team after being selected?",
-    "details": ["Teams are selected as a whole, but individual applications are welcome. You can interact and team up with fellow participants in our discord channel. You can't change your team in the final round."]
+    "details": [
+      "Teams are selected as a whole, but individual applications are welcome. You can interact and team up with fellow participants in our discord channel. You can't change your team in the final round."
+    ]
   },
   {
     "header": "🛠️ What kind of projects can I build during Hack-o-Fiesta?",
-    "details": ["You can build anything aligning with the event theme - a website, an app, or even hardware, solving a social problem or fitting our agenda."]
+    "details": [
+      "You can build anything aligning with the event theme - a website, an app, or even hardware, solving a social problem or fitting our agenda."
+    ]
   },
   {
     "header": "⏳ Can I start working on my project before the event?",
-    "details": ["No! You may familiarize yourself with tools beforehand, but the first line of code must be written after the hackathon begins."]
+    "details": [
+      "No! You may familiarize yourself with tools beforehand, but the first line of code must be written after the hackathon begins."
+    ]
   },
   {
     "header": "❓ What if I don't know how to code? How can I get help during Hack-o-Fiesta?",
-    "details": ["No problem! Hack-o-Fiesta is a great place to start. Ask our mentors, join our Discord for help, and explore workshops to enhance your coding skills."]
+    "details": [
+      "No problem! Hack-o-Fiesta is a great place to start. Ask our mentors, join our Discord for help, and explore workshops to enhance your coding skills."
+    ]
   },
   {
     "header": "🌍 How can I contribute to the positive impact aspect of Hack-o-Fiesta?",
-    "details": ["We pledge to donate surplus food and resources to underprivileged children. Your participation indirectly contributes to this cause."]
+    "details": [
+      "We pledge to donate surplus food and resources to underprivileged children. Your participation indirectly contributes to this cause."
+    ]
   },
   {
     "header": "🎯 What are the key domains covered in Hack-o-Fiesta, and can I choose any domain for my project?",
-    "details": ["Hack-o-Fiesta covers Sustainability, Social Good, AI/ML, Blockchain & Web3, Business Solution, and Open Innovation. You can choose any of these domains for your project."]
+    "details": [
+      "Hack-o-Fiesta covers Sustainability, Social Good, AI/ML, Blockchain & Web3, Business Solution, and Open Innovation. You can choose any of these domains for your project."
+    ]
   },
   {
     "header": "🤝 Can I form a team with participants from different colleges?",
-    "details": ["Absolutely! We encourage collaboration, and teams can be formed with participants from different colleges."]
+    "details": [
+      "Absolutely! We encourage collaboration, and teams can be formed with participants from different colleges."
+    ]
   },
   {
     "header": "📢 How can I stay updated on event details, venue information, and other announcements?",
-    "details": ["Follow our official social media channels and regularly check the website for updates."]
+    "details": [
+      "Follow our official social media channels and regularly check the website for updates."
+    ]
   },
   {
     "header": "💡 Are there any sponsored challenges with prizes, and how can I participate in them?",
-    "details": ["Yes, there are exciting prizes from sponsors for hacks on their APIs/Protocols. Keep an eye on the website and social media for sponsor announcements."]
+    "details": [
+      "Yes, there are exciting prizes from sponsors for hacks on their APIs/Protocols. Keep an eye on the website and social media for sponsor announcements."
+    ]
   },
   {
     "header": "🏆 How are projects judged, and what criteria are considered?",
-    "details": ["Projects are judged based on creativity, technical complexity, impact, and presentation. Detailed judging criteria will be provided soon."]
+    "details": [
+      "Projects are judged based on creativity, technical complexity, impact, and presentation. Detailed judging criteria will be provided soon."
+    ]
   },
   {
     "header": "📢 What will be the Code of Conduct ?",

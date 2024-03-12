@@ -144,8 +144,9 @@ const HeroSection = () => {
               <PrizeCard Rank="Most Creative AI Idea" Price="₹3,000" />
             </div>
             <p className="text-center text-xl max-w-5xl mx-auto">
-              Register & submit your ideas to get a chance to pitch to
-              International VCs in Dubai and access to exclusive mentorship.
+              Register & submit your ideas before 20th March to get a chance to
+              pitch to International VCs in Dubai and access to exclusive
+              mentorship.
             </p>
           </div>
         </motion.div>
