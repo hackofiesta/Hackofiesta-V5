@@ -2,7 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import Trophy from "../../../public/trophy_animate3.json";
 import { myFont } from "../common/AnimatedTitle";
-const PrizeCard = ({ Rank, Price }) => {
+export const PrizeCard = ({ Rank, Price }) => {
   return (
     <div className="px-2 py-2 flex flex-col justify-center items-center my-6 rounded-sm border-2 bg-black w-fit ">
       <div className="text-2xl w-fit text-center bg-black -mt-7 px-4 mb-2">

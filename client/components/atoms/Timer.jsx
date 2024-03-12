@@ -1,47 +1,46 @@
 import React, { useEffect, useState, useRef } from "react";
- // Make sure to install gsap as a dependency
-import "../../css/timer.css"
+// Make sure to install gsap as a dependency
+import "../../css/timer.css";
 const Timer = () => {
-   const [timerDays, setTimerDays] = useState(0);
-   const [timerHours, setTimerHours] = useState(0);
-   const [timerMinutes, setTimerMinutes] = useState(0);
-   const [timerSeconds, setTimerSeconds] = useState(0);
+  const [timerDays, setTimerDays] = useState(0);
+  const [timerHours, setTimerHours] = useState(0);
+  const [timerMinutes, setTimerMinutes] = useState(0);
+  const [timerSeconds, setTimerSeconds] = useState(0);
 
-   let interval;
+  let interval;
 
-   const startTimer = () => {
-     const countDownDate = new Date("March 25,2024 ").getTime();
+  const startTimer = () => {
+    const countDownDate = new Date("March 25,2024 ").getTime();
 
-     interval = setInterval(() => {
-       const now = new Date().getTime();
+    interval = setInterval(() => {
+      const now = new Date().getTime();
 
-       const distance = countDownDate - now;
+      const distance = countDownDate - now;
 
-       const days = Math.floor(distance / (24 * 60 * 60 * 1000));
-       const hours = Math.floor(
-         (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
-       );
-       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
-       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
 
-       if (distance < 0) {
-         // Stop Timer
+      if (distance < 0) {
+        // Stop Timer
 
-         clearInterval(interval.current);
-       } else {
-         // Update Timer
-         setTimerDays(days);
-         setTimerHours(hours);
-         setTimerMinutes(minutes);
-         setTimerSeconds(seconds);
-       }
-     });
-   };
+        clearInterval(interval.current);
+      } else {
+        // Update Timer
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
+  };
 
-   useEffect(() => {
-     startTimer();
-   });
-
+  useEffect(() => {
+    startTimer();
+  });
 
   return (
     <div className="w-max">
@@ -70,7 +69,9 @@ const Timer = () => {
           </div>
         </section>
       </section>
-      <div class="text-center font-bold text-xl">5th April - 7th April</div>
+      <div class="text-center font-bold text-xl text-yellow-600 mt-4">
+        5th April - 7th April
+      </div>
     </div>
   );
 };

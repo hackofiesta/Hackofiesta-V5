@@ -13,6 +13,7 @@ import Team from "@/components/molecules/home/Team";
 import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
 import Prizes from "@/components/molecules/prize-section/Prizes";
 import WantToSponsor from "@/components/molecules/sponsors/WantToSponsor";
+import Timeline from "@/components/molecules/home/Timeline";
 
 const Home = () => {
   const [val, setVal] = useState(false);
@@ -34,23 +35,24 @@ const Home = () => {
     }
   }, []);
   return (
-    <div >
+    <div>
       {!val && <WebsiteLoadUp />}
       {val && (
         <>
           <Navbar />
-          <HeroSection/>
-          <TextSplitEffect/>
-          <RequestToJoin/>
-          <Prizes/>
-          <Stats/>
-          <Sponsors/>
-          <Team/>
-          <Accordian/>
-          <WantToSponsor/>
+          <HeroSection />
+          <Timeline />
+          <TextSplitEffect />
+          <RequestToJoin />
+          <Prizes />
+          <Stats />
+          <Sponsors />
+          <Team />
+          <Accordian />
+          <WantToSponsor />
           <Footerr />
         </>
-      )}  
+      )}
     </div>
   );
 };

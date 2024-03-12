@@ -6,6 +6,7 @@ import { ThemeProvider } from "@lobehub/ui";
 import localFont from "next/font/local";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { PrizeCard } from "../prize-section/Prizes";
 
 const HeroSection = () => {
   const actions = [
@@ -29,7 +30,7 @@ const HeroSection = () => {
     <div>
       <div
         id="hero"
-        className="h-screen relative bg-black flex flex-col sm:pt-0 pt-[30px] sm:justify-start"
+        className=" relative bg-black flex flex-col sm:pt-0 pt-[30px] sm:justify-start"
       >
         <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-96"></div>
         <div className="hidden lg:block w-2.5 translate-x-1 h-2.5 bg-white rounded-full absolute right-36"></div>
@@ -128,8 +129,25 @@ const HeroSection = () => {
             // description="Lobe UI is an open-source UI component library for <br/>building chatbot web apps"
             // title="Lobe <b>UI</b>"
           />
-          <p className="text-center font-bold text-xl mt-[-15px]">IDEATION ROUND HAS ALREADY BEGUN</p>
-          <p className="text-center font-bold text-xl">Register and Submit your ideas before 20th March</p>
+
+          <div className="space-y-8 mt-24">
+            <div>
+              <p className="text-center text-xl mt-[-15px]">
+                Can’t join us offline in Lucknow?
+              </p>
+              <p className="text-center text-xl">
+                No worries. We’ve got something special for you too :)
+              </p>
+            </div>
+            <div className="flex flex-wrap w-full justify-center space-x-0 md:space-x-6 md:mt-8">
+              <PrizeCard Rank="Most Creative Web3 Idea" Price="₹5,000" />
+              <PrizeCard Rank="Most Creative AI Idea" Price="₹3,000" />
+            </div>
+            <p className="text-center text-xl max-w-5xl mx-auto">
+              Register & submit your ideas to get a chance to pitch to
+              International VCs in Dubai and access to exclusive mentorship.
+            </p>
+          </div>
         </motion.div>
         <div id="about"></div>
       </div>
