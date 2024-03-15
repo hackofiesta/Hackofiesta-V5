@@ -39,7 +39,7 @@ const Stats = () => {
             },
             {
               description:
-                " Dive into the world of smart contracts, DeFi protocols and the decentralized web. Build the next frontier of the internet.",
+                " Explore the realm of smart contracts, DeFi protocols, and the decentralized web, leveraging EVM for seamless deployment.",
               icon: Zap,
               title: "BLOCKCHAIN & WEB3",
             },
