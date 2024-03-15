@@ -17,7 +17,7 @@ const Heading = () => {
         Past SPONSORS
       </div>
       <div className="text-2xl z-50 mb-10 font-thin sm:mt-3 mt-2 mx-7 text-center text-white max-w-[600px]">
-       Huge thanks to our previous sponsors for making Hackofiesta 4 possible.
+        Huge thanks to our previous sponsors for making Hackofiesta 4 possible.
       </div>
     </div>
   );
@@ -70,12 +70,7 @@ const GoldCard = () => {
   return (
     <StyledDiv2 className="min-h-[130px] flex  justify-center gap-6 items-center w-full px-5 max-w-[210px]">
       <div className="flex items-center justify-between bg-white rounded-md p-2 px-3 opacity-85">
-        <div className="w-1/4">
-          <img src={"/github_logo.png"} className=" w-full" />
-        </div>
-        <div className={`font-serif text-black text-center text-4xl font-bold`}>
-          Github
-        </div>
+        <img src={"/GitHub_Lockup_Dark.png"} className="w-full" />
       </div>
     </StyledDiv2>
   );

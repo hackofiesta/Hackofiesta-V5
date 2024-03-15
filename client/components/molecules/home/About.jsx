@@ -96,8 +96,8 @@ const About = () => {
             <div className="px-4 sm:mr-0 text-gray-500 text-center sm:px-2 w-screen text-base xl:text-2xl lg:text-2xl xl:w-[500px] xl:p-6 md:text-2xl md:w-[350px] sm:text-xl sm:w-[250px] sm:ml-8 sm:p-0">
               It is the biggest offline hackathon in Uttar Pradesh, conducted by
               IIIT Lucknow. Tune in to 36 hours of creativity, coding and
-              collaboration leading to some of the most innovative hacks you
-              have ever seen.
+              collaboration and dive deep into the realms of emerging
+              technologies like blockchain.
             </div>
             <div className="flex justify-center btnDiv">
               {/* <button className="button-glitch mx-5 flex items-center my-2">
