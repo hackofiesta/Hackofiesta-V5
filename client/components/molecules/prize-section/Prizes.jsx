@@ -38,7 +38,7 @@ const Prizes = () => {
         <div className="flex  flex-wrap   w-full justify-evenly   md:mt-8">
           <PrizeCard Rank="Diversity" Price="₹15,000" />
           <PrizeCard Rank="Beginner's Track" Price="₹25,000" />
-          <PrizeCard Rank="Most Creative Web3 Idea" Price="₹5,000" />
+          <PrizeCard Rank="Most Creative Blockchain Idea" Price="₹5,000" />
           <PrizeCard Rank="Most Creative AI Idea" Price="₹3,000" />
         </div>
       </div>

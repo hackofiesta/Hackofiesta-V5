@@ -140,7 +140,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex flex-wrap w-full justify-center space-x-0 md:space-x-6 md:mt-8">
-              <PrizeCard Rank="Most Creative Web3 Idea" Price="₹5,000" />
+              <PrizeCard Rank="Most Creative Blockchain Idea" Price="₹5,000" />
               <PrizeCard Rank="Most Creative AI Idea" Price="₹3,000" />
             </div>
             <p className="text-center text-xl max-w-5xl mx-auto">
