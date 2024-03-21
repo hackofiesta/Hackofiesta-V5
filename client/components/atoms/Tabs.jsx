@@ -81,11 +81,6 @@ export default function VerticalTabs() {
         designation: "Lead",
       },
       {
-        image: "/team/anshu.png",
-        name: "Anshu Verma",
-        designation: "Lead",
-      },
-      {
         image: "/team/Deep.jpeg",
         name: "Deepak Chattwani",
         designation: "Lead",

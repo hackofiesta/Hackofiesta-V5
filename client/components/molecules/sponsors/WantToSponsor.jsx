@@ -20,7 +20,7 @@ const WantToSponsor = () => {
         Thus, every year we have a special diversity track reserved for people who face under representation, systemic bias or discrimination in the tech industry.</div>
         <div className='flex justify-center gap-20 mt-10 mb-8'>
             <button className='bg-white text-black rounded-md md:text-3xl p-2 md:p-4 font-medium hover:bg-gray-200 transition-all active:bg-gray-500 active:border-white active:border hover:scale-105 active:scale-95'><a href='https://drive.google.com/file/d/15ENSZ7l8eTafODgAPmDKwqsPgs4iD9HO/view?usp=sharing' className='hover:text-black' target='_blank'>Brochure</a></button>
-            <button className='bg-white text-black rounded-md md:text-3xl p-2 md:p-4 font-medium hover:bg-gray-200 transition-all active:bg-gray-500 active:border-white active:border hover:scale-105 active:scale-95'><a href='#' className='hover:text-black' target='_blank'>Fill the Form</a></button>
+            {/* <button className='bg-white text-black rounded-md md:text-3xl p-2 md:p-4 font-medium hover:bg-gray-200 transition-all active:bg-gray-500 active:border-white active:border hover:scale-105 active:scale-95'><a href='#' className='hover:text-black' target='_blank'>Fill the Form</a></button> */}
         </div>
       </StyledDiv>
   )
