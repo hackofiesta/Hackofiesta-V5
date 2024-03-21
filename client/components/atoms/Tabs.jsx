@@ -137,11 +137,6 @@ export default function VerticalTabs() {
         name: "Shivam Patil",
         designation: "Executive",
       },
-      {
-        image: "/team/Akshat Bhansali.PNG",
-        name: "Akshat Bhansali",
-        designation: "Executive",
-      },
     ],
     cr: [
       {
