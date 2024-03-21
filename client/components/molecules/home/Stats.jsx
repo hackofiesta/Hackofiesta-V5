@@ -4,12 +4,11 @@ import { MoonStar, Palette, Zap } from "lucide-react";
 import { myFont } from "../common/AnimatedTitle";
 import BgGradient from "@/components/atoms/gradientBackground";
 
-
 const Stats = () => {
   console.log(Features);
   return (
     // <ThemeProvider themeMode="dark">
-      <div>
+    <div>
       <div
         className={`md:text-8xl ${myFont.className} sm:text-6xl text-5xl text-center md:pt-32`}
       >
@@ -23,7 +22,6 @@ const Stats = () => {
                 "Develop innovative solutions that address environmental challenges and promote a greener future.",
               icon: Zap,
               title: "SUSTAINABILITY",
-
             },
             {
               description:
@@ -39,7 +37,7 @@ const Stats = () => {
             },
             {
               description:
-                " Dive into the world of smart contracts, DeFi protocols and the decentralized web. Build the next frontier of the internet.",
+                "Explore the realm of the decentralized web, by building on Blockchain. Special preference to projects leveraging EVM for seamless deployment.",
               icon: Zap,
               title: "BLOCKCHAIN & WEB3",
             },
@@ -59,7 +57,7 @@ const Stats = () => {
           // itemStyle={{ width:"500px",height:"500px" }}
         />
       </div>
-      </div>
+    </div>
     // </ThemeProvider>
   );
 };
