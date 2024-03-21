@@ -8,6 +8,7 @@ import Stats from "@/components/molecules/home/Stats";
 import Accordian from "@/components/molecules/accordian/Accordian";
 import Footerr from "@/components/molecules/common/Footer";
 import Sponsors from "@/components/molecules/sponsors/Sponsors";
+import NewSponsors from "@/components/molecules/sponsors/NewSponsors";
 import RequestToJoin from "@/components/molecules/home/RequestToJoin";
 import Team from "@/components/molecules/home/Team";
 import { Features, FeaturesProps, ThemeProvider } from "@lobehub/ui";
@@ -40,16 +41,16 @@ const Home = () => {
       {val && (
         <>
           <Navbar />
-          <HeroSection />
-          <Timeline />
-          <TextSplitEffect />
-          <RequestToJoin />
-          <Prizes />
-          <Stats />
-          <Sponsors />
-          <Team />
-          <Accordian />
-          <WantToSponsor />
+          <HeroSection/>
+          <TextSplitEffect/>
+          <RequestToJoin/>
+          <Prizes/>
+          <Stats/>
+          <NewSponsors/>
+          <Sponsors/>
+          <Team/>
+          <Accordian/>
+          <WantToSponsor/>
           <Footerr />
         </>
       )}
