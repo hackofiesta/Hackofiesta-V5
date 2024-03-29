@@ -47,7 +47,7 @@ const Home = () => {
           <Prizes/>
           <Stats/>
           <NewSponsors/>
-          <Sponsors/>
+          {/* <Sponsors/> */}
           <Team/>
           <Accordian/>
           <WantToSponsor/>
