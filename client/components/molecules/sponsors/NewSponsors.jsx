@@ -83,7 +83,7 @@ const GoldCard = () => {
 
 const Sponsors = () => {
   return (
-    <div className="min-h-screen z-0 relative pt-16 pb-28 mt-24">
+    <div className="min-h-screen z-0 relative pt-16 pb-28 mt-24 ">
       <BgGradient />
       <Heading />
       {/* <div className="sm:text-5xl text-3xl  text-center text-white sm:mt-10">
@@ -120,6 +120,7 @@ const Sponsors = () => {
       <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
         <GoldCard />
       </div>
+      <div className="text-5xl font-bold flex justify-center ">More Sponsors coming soon !!</div>
     </div>
   );
 };
