@@ -80,6 +80,15 @@ const GoldCard = () => {
     </StyledDiv2>
   );
 };
+const BronzeCard = () => {
+  return (
+    <StyledDiv2 className="min-h-[130px] flex  justify-center gap-6 items-center w-full px-5 max-w-[210px]">
+      <div className="flex items-center justify-between bg-white rounded-md p-2 px-3 opacity-85">
+      <img src={"/Iammusic.png"} className=" w-full" />
+      </div>
+    </StyledDiv2>
+  );
+};
 
 const Sponsors = () => {
   return (
@@ -119,6 +128,12 @@ const Sponsors = () => {
       </div>
       <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
         <GoldCard />
+      </div>
+      <div className="sm:text-5xl text-3xl text-center text-white sm:mt-16 mt-7">
+      🟤 Bronze Sponsors
+      </div>
+      <div className="flex flex-wrap gap-16  px-10 py-10 justify-center mt-4 sm:mx-10">
+        <BronzeCard />
       </div>
       <div className="text-5xl font-bold flex justify-center ">More Sponsors coming soon !!</div>
     </div>
