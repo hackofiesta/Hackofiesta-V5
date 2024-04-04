@@ -39,7 +39,7 @@ const Stats = () => {
               description:
                 "Explore the realm of the decentralized web, by building on Blockchain. Special preference to projects leveraging EVM for seamless deployment.",
               icon: Zap,
-              title: "BLOCKCHAIN & WEB3",
+              title: "ETHEREUM & BLOCKCHAIN",
             },
             {
               description:

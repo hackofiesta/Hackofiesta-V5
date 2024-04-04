@@ -141,7 +141,7 @@ const HeroSection = () => {
             </div>
             <div className="flex flex-wrap w-full justify-center space-x-0 md:space-x-6 md:mt-8">
               <PrizeCard
-                Rank="Most Creative Blockchain Idea on EVM"
+                Rank="Most Creative Ethereum & Blockchain Idea"
                 Price="₹5,000"
               />
               <PrizeCard Rank="Most Creative AI Idea" Price="₹3,000" />
