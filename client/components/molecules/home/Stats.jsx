@@ -37,7 +37,7 @@ const Stats = () => {
             },
             {
               description:
-                "Explore the realm of the decentralized web, by building on Blockchain. Special preference to projects leveraging EVM for seamless deployment.",
+                "This track is for Ethereum ecosystem projects, including those on EVM-compatible chains like Arbitrum, Polygon, Optimism, etc. All submissions in this category are eligible for assessment.",
               icon: Zap,
               title: "ETHEREUM & BLOCKCHAIN",
             },
