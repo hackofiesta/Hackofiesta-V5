@@ -137,11 +137,6 @@ export default function VerticalTabs() {
         name: "Shivam Patil",
         designation: "Executive",
       },
-      {
-        image: "/team/Akshat Bhansali.PNG",
-        name: "Akshat Bhansali",
-        designation: "Executive",
-      },
     ],
     cr: [
       {
@@ -153,7 +148,7 @@ export default function VerticalTabs() {
     pr: [
       {
         image: "/team/Shreya Singh.jpg",
-        name: "Shreya Singh",
+        name: "Shrey Singh",
         designation: "Executive",
       },
       {
@@ -163,6 +158,11 @@ export default function VerticalTabs() {
       },
     ],
     logistics: [
+      {
+        image: "/team/Akshat Bhansali.PNG",
+        name: "Akshat Bhansali",
+        designation: "Executive",
+      },
       {
         image: "/team/Mudit.jpg",
         name: "Mudit",
@@ -189,7 +189,12 @@ export default function VerticalTabs() {
     design: [
       {
         image: "/team/MayankRawat.jpeg",
-        name: "MayankRawat",
+        name: "Mayank Rawat",
+        designation: "Executive",
+      },
+      {
+        image: "/team/Aarav_Saini.jpg",
+        name: "Aarav Saini",
         designation: "Executive",
       },
     ],
