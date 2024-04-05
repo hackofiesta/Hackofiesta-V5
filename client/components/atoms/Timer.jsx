@@ -10,8 +10,8 @@ const Timer = () => {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("March 1,2024").getTime();
-
+    const countDownDate = new Date("April 5,2024");
+    countDownDate.setHours(21)
     interval = setInterval(() => {
       const now = new Date().getTime();
 
@@ -70,8 +70,8 @@ const Timer = () => {
         </section>
       </section>
       <div class="text-center font-bold text-xl text-yellow-600 mt-4">
-        Registrations open!
-        <br /> Submit your ideas NOW
+        Hackathon will be conducted
+        <br /> in Library (Room No - 428)
       </div>
     </div>
   );
