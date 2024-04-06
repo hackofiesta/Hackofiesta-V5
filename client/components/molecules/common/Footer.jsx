@@ -159,7 +159,7 @@ const Footerr = () => {
             </div>
             <div className="">
               <Link
-                href=" https://discord.gg/8VK8jMt63j"
+                href=" https://discord.gg/TQnjFNJYBP"
                 target="_blank"
                 className=" hover:text-cyan-400 transition-all duration-500 text-gray-400"
               >
