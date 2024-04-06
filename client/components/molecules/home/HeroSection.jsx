@@ -125,7 +125,7 @@ const HeroSection = () => {
           className="sm:mt-0 sm:mb-0 mt-6"
         >
           <Hero
-            actions={actions}
+            // actions={actions}
             // description="Lobe UI is an open-source UI component library for <br/>building chatbot web apps"
             // title="Lobe <b>UI</b>"
           />
