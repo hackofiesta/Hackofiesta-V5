@@ -118,11 +118,6 @@ export default function VerticalTabs() {
         designation: "Executive",
       },
       {
-        image: "/team/Monark.png",
-        name: "Monark Jain",
-        designation: "Executive",
-      },
-      {
         image: "/team/Akshat Bhansali.PNG",
         name: "Akshat Bhansali",
         designation: "Executive",
